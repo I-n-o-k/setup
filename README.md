@@ -1,4 +1,4 @@
-Setup for build kernel on android  
+# Setup for build kernel on android  
 500mb+ download 
 Minimal 10gb+ free disk for setup and build kernel 
 Available on chroot 
