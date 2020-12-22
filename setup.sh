@@ -1,3 +1,4 @@
+#additional sources for ubuntu-20.4.1
 apt-get update
 apt-get install git
 
@@ -7,16 +8,19 @@ mv sources.list /etc/apt
 
 cd $HOME
 
+#install java
 apt-get update && apt-get -y upgrade
 
 apt-get -y install default-jdk openjdk-8-jdk
 
 update-alternatives --config java
 
+#install Compile tools
 apt-get -y install git-core gnupg flex bison gperf build-essential zip curl libc6-dev
 
 apt-get -y install libncurses5-dev x11proto-core-dev libx11-dev libreadline6-dev libgl1-mesa-glx libgl1-mesa-dev python make sudo gcc g++ bc grep tofrodos libxml2-utils xsltproc zlib1g-dev
 
+#install gcc and g++
 apt-get -y install gcc-7
 
 apt-get -y install g++-7
