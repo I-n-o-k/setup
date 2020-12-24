@@ -12,7 +12,7 @@ cd $HOME
 apt-get update && apt-get -y upgrade
 
 apt-get -y install default-jdk openjdk-8-jdk
-
+echo "#CHOICE OPENJDK-8"
 update-alternatives --config java
 
 #install Compile tools
@@ -31,6 +31,7 @@ update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 60 --slave /usr/bi
 
 update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-7
 
+echo "#CHOICE GCC-5 MANUAL"
 update-alternatives --config gcc
 
 apt-get -y install gcc-8
