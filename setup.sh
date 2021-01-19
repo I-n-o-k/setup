@@ -2,7 +2,7 @@
 
 #additional sources for ubuntu-20.4.1
 apt-get update
-apt-get install git
+apt-get install git gnupg
 
 git clone https://github.com/I-n-o-k/Sources_list
 cd Sources_list
