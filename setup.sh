@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #additional sources for ubuntu-20.4.1
 apt-get update
 apt-get install git
@@ -8,6 +10,8 @@ mv sources.list /etc/apt
 
 cd $HOME
 
+apt update
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
 #install java
 apt-get update && apt-get -y upgrade
 
