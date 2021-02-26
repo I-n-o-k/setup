@@ -28,11 +28,11 @@ apt-get -y install gcc-7
 
 apt-get -y install g++-7
 
-apt-get -y install gcc-5
+apt-get -y install gcc-6
 
 update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 60 --slave /usr/bin/g++ g++ /usr/bin/g++-7
 
-update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-7
+update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 60 --slave /usr/bin/g++ g++ /usr/bin/g++-7
 
 echo "#CHOICE GCC-5 MANUAL"
 update-alternatives --config gcc
