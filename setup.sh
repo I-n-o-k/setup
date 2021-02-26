@@ -34,7 +34,7 @@ update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 60 --slave /usr/bi
 
 update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 60 --slave /usr/bin/g++ g++ /usr/bin/g++-7
 
-echo "#CHOICE GCC-5 MANUAL"
+echo "#CHOICE GCC-6 MANUAL"
 update-alternatives --config gcc
 
 apt-get -y install gcc-8
